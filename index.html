@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Flux</title>
+    <style type="text/css">
+      canvas {border: 1px solid black; }
+    </style>
+  </head>
+  <body onload="on_load();">
+    <p>
+      <canvas id="graph" width="800" height="600"></canvas>
+    </p>
+    <p>
+      <label id="label">0</label>
+    </p>
+    <p>
+      <button onclick="on_inc_button_click();">Up vote</button>
+      <button onclick="on_dec_button_click();">Down vote</button>
+      <button onclick="on_reset_button_click();">Reset</button>
+    </p>
+  </body>
+  <script type="text/javascript" src="dispatcher.js"></script>
+  <script type="text/javascript" src="votestore.js"></script>
+  <script type="text/javascript" src="actiontypes.js"></script>
+  <script type="text/javascript" src="actions.js"></script>
+  <script type="text/javascript" src="graphview.js"></script>
+  <script type="text/javascript" src="code.js"></script>
+</html>
